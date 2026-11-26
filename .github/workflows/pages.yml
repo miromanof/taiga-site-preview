@@ -17,7 +17,7 @@ jobs:
       - uses: actions/configure-pages@v5
       - name: Unpack the published preview
         run: |
-          curl -fL --retry 3 -o preview.zip https://github.com/miromanof/taiga-site-preview/releases/download/preview-v1/TAIGA-GITHUB-PAGES.zip
+          curl -fL --retry 3 -o preview.zip https://github.com/miromanof/taiga-site-preview/releases/download/preview-v2/TAIGA-GITHUB-PAGES.zip
           unzip -q preview.zip -d site
           test -f site/index.html
       - uses: actions/upload-pages-artifact@v3
